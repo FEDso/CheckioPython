@@ -20,3 +20,5 @@ if (len(passw) < 10 or not re.match("[a-zA-Z0-p]+", passw)
     print(False)
 else:
     print(True)
+
+  
