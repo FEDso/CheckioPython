@@ -52,12 +52,11 @@ def wild_dogs(coords):
             point.sort()
             a = (point[1][1] - point[0][1])/(point[1][0] - point[0][0])
             b = point[1][1] - a*point[1][0]
-            if point[1][1] == b + a*point[1][0]:
-                x = -(a*b/(1 + a**2))
-                y = b - (a**2*b/(1 + a**2))
-                r = round((x**2 + y**2)**0.5, 2)
-                if r < res:
-                    res = r                
+            x = -(a*b/(1 + a**2))
+            y = b - (a**2*b/(1 + a**2))
+            r = round((x**2 + y**2)**0.5, 2)
+            if r < res:
+                res = r                
     return res
 
 #------------------------------------------------------------------------------#
